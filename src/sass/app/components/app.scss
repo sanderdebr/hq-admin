@@ -1,0 +1,12 @@
+.app-content {
+    outline: 1px solid red;
+    min-height: calc(100vh - 50px);
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #e5e5e5;
+    margin-left: $sidebar-width;
+    transition: margin-left .3s ease;
+    @media(max-width: 767px) {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,32 @@
+.app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top:70px;
+    width: $sidebar-width;
+    overflow: auto;
+    z-index: 10;
+    background-color: $sidebar-bgcolor;
+    box-shadow: $box-shadow;
+    transition: left .3s ease,
+                width .3s ease;
+    @media(max-width:767px) {
+        left: -230px;
+    }
+}
+.app-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.app-menu__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-left: 2px solid transparent;
+}
+.app.sidebar-toggled .app-sidebar {
+    left: 0;
+}
